@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="AppCtrl">
+	<head>
+		<title ng-bind="pageTitle"></title>
+		<meta lang="en" charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	</head>
+	<body>
+
+		<div id="ng-view" ng-view></div>
+
+		<!-- build:js js/vendor.js -->
+		<script type="text/javascript" src="../vendor/angular/angular.js"></script>
+		<script type="text/javascript" src="../vendor/angular-route/angular-route.js"></script>
+		<script type="text/javascript" src="../vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+		<!-- /build -->
+
+		<!-- build:js js/app.js -->
+		<script type="text/javascript" src="app/app.js"></script>
+		<script type="text/javascript" src="app/sections/home/home.js"></script>
+		<script type="text/javascript" src="app/sections/about/about.js"></script>
+		<!-- /build -->
+	</body>
+</html>
