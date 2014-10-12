@@ -57,12 +57,13 @@ module.exports = function(grunt) {
    	 	// Concatenate js files.
     	concat: {
       		app: {
-        		src: [
-        			'src/**/*.js', 
-        			'!src/**/*.spec.js', // Exlcude the spec files.
-        			'tmp/*.js'
-        		],
-        		dest: 'dist/js/app.js'
+        		files: {
+			        'dist/js/app.js': [
+			        	'src/**/*.js', 
+        				'!src/**/*.spec.js', // Exlcude the spec files.
+        				'tmp/*.js'
+        			]
+			   	}
       		},
       		vendor: {
       			src: [

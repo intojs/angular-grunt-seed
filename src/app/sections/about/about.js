@@ -2,6 +2,8 @@
  *  app.aboout
  */
 
+'use strict';
+
 angular.module('app.about', [])
 
 .config(['$routeProvider', function($routeProvider) {

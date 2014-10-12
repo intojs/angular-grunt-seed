@@ -1,3 +1,9 @@
+/**
+ *	app.js
+ */
+
+'use strict';
+
 angular.module('generated-templates', ['generated-templates']);
 
 angular.module('app', [
@@ -11,9 +17,12 @@ angular.module('app', [
 	$routeProvider.otherwise({redirectTo: '/home'});
 }])
 
-.run( function run () {
+.run(function run () {
 })
 
 .controller('AppCtrl', ['$scope', '$location', function AppCtrl($scope, $location) {
 	$scope.pageTitle = 'Angular App';
+
+	var isStrict = (function() { return !this; })();
+	console.log(isStrict)
 }]);
